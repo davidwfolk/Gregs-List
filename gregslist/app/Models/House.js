@@ -1,4 +1,4 @@
-class House {
+export default class House {
   constructor(data) {
     this.house = data.house
     this.squareFeet = data.squareFeet

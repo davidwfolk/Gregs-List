@@ -7,9 +7,11 @@ let _state = {
   /** @type {Value[]} */
   values: [],
   /** @type {Car[]} */
-  cars: []
+  cars: [],
   /** @Type {House[]} */
-  house: []
+  houses: [],
+  /** @Type {Job[]} */
+  jobs: []
 };
 
 class Store {
