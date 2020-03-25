@@ -1,10 +1,10 @@
-import _store from "../store"
+import _store from "../store.js"
 import House from "../Models/House.js"
 
 class HouseService {
   create(newHouseObject) {
     let newHouse = new House(newHouseObject)
-    _store.State.houses.push(newHouseObject)
+    _store.State.houses.push(newHouse)
     console.log(newHouseObject)
   }
 }

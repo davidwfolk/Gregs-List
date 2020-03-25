@@ -20,14 +20,15 @@
         </div>
     </header>
     <main class="container-fluid bg-secondary">
-        <div class="row">
-            <div class="col-12">
-                <!-- Button trigger modal -->
+        <div class="row m-auto text-center">
+            <!--Car Modal-->
+            <div class="col-12 col-md-4 m-auto">
+                <!-- Car Button trigger modal -->
                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add-car-modal">
                     Add Car
                 </button>
 
-                <!-- Modal -->
+                <!-- Car Modal -->
                 <div class="modal fade" id="add-car-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
                     aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -80,6 +81,145 @@
                     </div>
                 </div>
             </div>
+        <!--House Modal-->
+            <div class="col-12 col-md-4 m-auto">
+                <!-- House Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add-house-modal">
+                    Add House
+                </button>
+
+                <!-- House Modal -->
+                <div class="modal fade" id="add-house-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Add House</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="container-fluid" onsubmit="app.houseController.create(event)">
+                                    <div class="form-group">
+                                        <label for="house"></label>
+                                        <input type="text" name="make" class="form-control"
+                                            placeholder="Single family, apartment, townhome, etc." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="squareFeet"></label>
+                                        <input type="text" name="model" class="form-control"
+                                            placeholder="Enter square feet here..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="yearBuilt"></label>
+                                        <input type="number" min="1900" max="2021" name="year" class="form-control"
+                                            placeholder="Enter year here..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bedrooms"></label>
+                                        <input type="number" min="0" name="bedrooms" class="form-control"
+                                            placeholder="Enter No. of bedrooms here..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bathrooms"></label>
+                                        <input type="number" min="0" name="bathrooms" class="form-control"
+                                            placeholder="Enter No. of bathrooms here..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="garage"></label>
+                                        <input type="number" min="0" name="garage" class="form-control"
+                                            placeholder="Is there a Garage? How many spaces?" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="homePrice"></label>
+                                        <input type="number" min="0" name="garage" class="form-control" placeholder="Enter price here..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="imgUrl"></label>
+                                        <input type="text" name="imgUrl" class="form-control"
+                                            placeholder="Enter Image Url here..." required>
+                                    </div>
+                                    <button class="btn-primary btn btn-block" type="submit">Create Car</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--Job Modal-->
+        <div class="col-12 col-md-4 m-auto">
+            <!-- Job Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add-house-modal">
+                Add House
+            </button>
+
+            <!-- Job Modal -->
+            <div class="modal fade" id="add-job-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Add Job</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="container-fluid" onsubmit="app.jobController.create(event)">
+                                <div class="form-group">
+                                    <label for="house"></label>
+                                    <input type="text" name="make" class="form-control"
+                                        placeholder="Single family, apartment, townhome, etc." required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="squareFeet"></label>
+                                    <input type="text" name="model" class="form-control"
+                                        placeholder="Enter square feet here..." required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="yearBuilt"></label>
+                                    <input type="number" min="1900" max="2021" name="year" class="form-control"
+                                        placeholder="Enter year here..." required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bedrooms"></label>
+                                    <input type="number" min="0" name="price" class="form-control"
+                                        placeholder="Enter No. of bedrooms here..." required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bathrooms"></label>
+                                    <textarea placeholder="Enter No. of bathrooms here..." name="description" cols="30"
+                                        rows="10" maxlength="250"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="garage"></label>
+                                    <textarea placeholder="Do You have a garage? How big?" name="description" cols="30"
+                                        rows="10" maxlength="250"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="homePrice"></label>
+                                    <textarea placeholder="Enter price here..." name="description" cols="30"
+                                        rows="10" maxlength="250"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="imgUrl"></label>
+                                    <input type="text" name="imgUrl" class="form-control"
+                                        placeholder="Enter Image Url here..." required>
+                                </div>
+                                <button class="btn-primary btn btn-block" type="submit">Create Job</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
         <div class="row" id="cars">
             <!-- this is where the _drawCars template gets injected -->
