@@ -103,17 +103,17 @@
                                 <form class="container-fluid" onsubmit="app.houseController.create(event)">
                                     <div class="form-group">
                                         <label for="house"></label>
-                                        <input type="text" name="make" class="form-control"
+                                        <input type="text" name="house" class="form-control"
                                             placeholder="Single family, apartment, townhome, etc." required>
                                     </div>
                                     <div class="form-group">
                                         <label for="squareFeet"></label>
-                                        <input type="text" name="model" class="form-control"
+                                        <input type="text" name="squareFeet" class="form-control"
                                             placeholder="Enter square feet here..." required>
                                     </div>
                                     <div class="form-group">
                                         <label for="yearBuilt"></label>
-                                        <input type="number" min="1900" max="2021" name="year" class="form-control"
+                                        <input type="number" min="1900" max="2021" name="yearBuilt" class="form-control"
                                             placeholder="Enter year here..." required>
                                     </div>
                                     <div class="form-group">
@@ -132,15 +132,15 @@
                                             placeholder="Is there a Garage? How many spaces?" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="homePrice"></label>
-                                        <input type="number" min="0" name="garage" class="form-control" placeholder="Enter price here..." required>
+                                        <label for="price"></label>
+                                        <input type="number" min="0" name="price" class="form-control" placeholder="Enter price here..." required>
                                     </div>
                                     <div class="form-group">
                                         <label for="imgUrl"></label>
                                         <input type="text" name="imgUrl" class="form-control"
-                                            placeholder="Enter Image Url here..." required>
+                                            placeholder="Enter Image Url here...">
                                     </div>
-                                    <button class="btn-primary btn btn-block" type="submit">Create Car</button>
+                                    <button class="btn-primary btn btn-block" type="submit">Create House</button>
                                 </form>
                             </div>
                             <div class="modal-footer">
