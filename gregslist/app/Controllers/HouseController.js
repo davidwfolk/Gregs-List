@@ -41,5 +41,9 @@ create(event) {
 
 }
 
+delete(index) {
+  _houseService.delete(index)
+  _drawHouses()
+}
 
 }
